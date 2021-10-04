@@ -6,8 +6,20 @@ img {
   width: 300px;
 }
 
-h1 {
+header h1 {
   font-size: 25px;
+  color: #ececec;
+  margin-left: 10px;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li a {
+  text-decoration: none;
+  color: #ececec;
 }
 
 p {
@@ -18,11 +30,31 @@ a[href^="mailto"]::before {
     content: "📧 ";
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #385170;
+  border-radius: 10px;
+  align-items: center;
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 18px;
+}
+
+header li {
+  display: block;
+  margin: 10px;
+}
+
 footer {
   display: flex;
   background-color: #9fd3c7;
   align-items: center;
   justify-content: space-between;
+  border-radius: 10px;
 }
 
 footer p {
@@ -31,4 +63,8 @@ footer p {
 
 footer .Address {
   margin-right: 10px;
+}
+
+form {
+  margin-bottom: 10px;
 }
